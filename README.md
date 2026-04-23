@@ -1,203 +1,190 @@
 # Project Manager Website
 
-Hiring-facing full-stack portfolio explorer for the entire `F:/study` tree.
+Project Manager Website is a hiring-facing portfolio explorer built from a recursive scan of the `F:/study` hierarchy. It turns the user's real local work into a curated public showcase, project detail pages, public inventory ledgers, and API routes backed by committed generated artifacts.
 
-Live site: https://project-manager-website-michaelunkai.netlify.app  
-Repository: https://github.com/Michaelunkai/project-manager-website
+Live site: `https://project-manager-website-michaelunkai.netlify.app`
 
-## What It Does
+GitHub repository: `https://github.com/Michaelunkai/project-manager-website`
 
-This project turns the user's real `F:/study` workspace into a public, searchable catalog of work for employers, clients, and collaborators.
+## What This Project Does
 
-It does not fabricate projects, screenshots, technologies, or metrics. The site is built from committed scan artifacts and a committed SQLite catalog generated from the local filesystem. Featured work is selective, while the explorer exposes the broader catalog.
+- Scans the full `F:/study` tree and identifies visible projects without fabricating metadata.
+- Stores the resulting catalog in committed JSON artifacts and a committed SQLite database.
+- Serves a manually curated recruiter-facing showcase from bundled generated data so deployed detail/API routes stay reliable.
+- Publishes public inventory proof files so visitors can inspect what was scanned, included, excluded, and why.
 
-Current verified inventory snapshot:
+This is not a task manager app. It is a portfolio-quality project atlas for employers, clients, and collaborators.
 
-- `projectCount`: `444`
-- `featuredCount`: `6`
-- `exclusionCount`: `233`
-- `scannedDirectoryCount`: `22657`
-- `prunedDirectoryCount`: `208`
-- `errorCount`: `0`
-- `generatedAt`: `2026-04-23T21:07:25.065Z`
+## Stack And Why
 
-## Stack
-
-- `Next.js 16` App Router for the public UI, route handlers, and server rendering
-- `React 19` for the client experience
-- `TypeScript` for strict typing across scan, catalog, and API code
-- `Tailwind CSS 4` and `Framer Motion` for the polished portfolio presentation
-- `Zod` for query validation in the API layer
-- `@libsql/client` over a committed local SQLite/libSQL database for the real catalog backend
-
-Why this stack:
-
-- Next.js App Router gives one codebase for landing pages, explorer pages, and API endpoints.
-- SQLite keeps the catalog queryable as real application data instead of flattening everything into static markdown.
-- The committed artifacts make the inventory auditable and reproducible.
-- Tailwind and Framer Motion keep the UI intentionally presentational without turning the project into a fake dashboard.
+- `Next.js 16` + `React 19` + App Router
+  - Good fit for a mixed static/dynamic site with server-rendered detail pages and route handlers.
+- `TypeScript`
+  - Keeps the scan pipeline, API payloads, and UI models aligned.
+- `Tailwind CSS 4` + `Framer Motion`
+  - Used for a restrained, premium visual system and motion without heavy UI dependencies.
+- `Zod`
+  - Validates query input for the public API.
+- `@libsql/client` + committed SQLite database
+  - Preserves a committed proof database as part of the scan pipeline without requiring a separate hosted database.
+- `Playwright` + `Vitest` + `ESLint`
+  - Covers UI verification, unit coverage, and code quality checks.
 
 ## Architecture
 
-1. `scripts/scan-study.ts` walks the full `F:/study` hierarchy.
-2. `src/lib/scan.ts` classifies projects, derives cautious metadata, and writes generated outputs.
-3. Generated artifacts are written under `data/generated/`.
-4. Public proof artifacts are mirrored under `public/inventory/`.
-5. `src/lib/catalog.ts` opens the generated SQLite database and serves the app/backend queries.
-6. `src/app/api/projects/*` exposes the catalog through validated route handlers.
-7. `src/app/*` renders the landing page, explorer, and project detail views.
+### Scan pipeline
 
-## Inventory Artifacts
+- `scripts/scan-study.ts`
+  - Entry point for the recursive study-tree scan.
+- `src/lib/scan.ts`
+  - Walks the hierarchy, infers metadata from real files, prunes noise, and writes artifacts.
+- `src/lib/inventory.ts`
+  - Shared types, constants, and path rules for generated inventory data.
 
-Generated backend artifacts:
+### Data outputs
 
-- `data/generated/project-catalog.db`
-- `data/generated/projects.json`
 - `data/generated/scan-summary.json`
+  - Generated summary used for internal verification.
+- `data/generated/projects.json`
+  - Generated JSON catalog of included projects.
 - `data/generated/exclusions.json`
+  - Generated exclusion ledger.
 - `data/generated/coverage.jsonl`
+  - Generated directory-coverage ledger.
+- `data/generated/project-catalog.db`
+  - SQLite proof artifact generated alongside the public JSON exports.
+- `public/inventory/*`
+  - Public copies of the proof artifacts exposed by the deployed site.
 
-Public proof artifacts:
+### Runtime
 
-- `public/inventory/projects.json`
-- `public/inventory/scan-summary.json`
-- `public/inventory/exclusions.json`
-- `public/inventory/coverage.jsonl`
-
-The site only exposes relative paths under `F:/study`. It does not expose local absolute machine paths.
+- `src/lib/catalog.ts`
+  - Reads bundled generated inventory data and returns the curated showcase, detail records, and related projects.
+- `src/lib/showcase.ts`
+  - Defines the manually curated recruiter-facing project set and its explicit repository/live links.
+- `src/app/api/projects/route.ts`
+  - Public listing API for the curated showcase with rate limiting and query validation.
+- `src/app/api/projects/[slug]/route.ts`
+  - Public detail API for a single curated project plus related work.
+- `src/app/page.tsx`
+  - Landing page with curated work, trust signals, and proof links.
+- `src/app/projects/page.tsx`
+  - Explorer page for the curated public case-study set.
+- `src/app/projects/[slug]/page.tsx`
+  - Detail page built from the same curated generated dataset.
 
 ## Environment Variables
 
-No environment variables are currently required for local development, scanning, verification, or the live deployment.
+No environment variables are required for the current app behavior.
 
-## Local Setup
+The deployed runtime reads committed generated artifacts from the repository. Do not add secrets to the scan output, committed inventory files, or public inventory directory.
+
+## Local Development
+
+Install dependencies:
 
 ```bash
 npm install
-npm run scan
-npm run typecheck
-npm run lint
-npm run test
 ```
 
-Run the app locally:
+Start the dev server:
 
 ```bash
 npm run dev
 ```
 
-## Refreshing The Catalog
-
-Whenever the `F:/study` workspace changes materially, rerun:
+Quality checks:
 
 ```bash
-npm run scan
-```
-
-That refreshes both:
-
-- the generated database and JSON artifacts under `data/generated/`
-- the public proof artifacts under `public/inventory/`
-
-## Local Production Verification
-
-The honest local production path on this machine is an NTFS mirror, not the original `F:` drive.
-
-Why:
-
-- `F:` is `exFAT`
-- `next build --webpack` on `F:` hit the verified filesystem error `EISDIR: illegal operation on a directory, readlink ... src\\app\\api\\projects\\[slug]\\route.ts`
-
-Use an NTFS mirror such as:
-
-- `C:\Users\micha\AppData\Local\Temp\project-manager-website-ntfs`
-
-Then run:
-
-```bash
-npm install
-npm run build
-npm run start -- --port 41337 --hostname 127.0.0.1
-npm run verify:ui -- http://127.0.0.1:41337
-```
-
-`scripts/verify-ui.ts` verifies:
-
-- the home heading
-- the explorer heading
-- the project detail proof heading
-- desktop and mobile screenshots under `artifacts/ui-verification`
-
-The UI verifier now prefers the local Chrome channel when available and falls back to Playwright-managed Chromium when Chrome is missing.
-
-## Deployment
-
-Current production host:
-
-- Netlify
-- https://project-manager-website-michaelunkai.netlify.app
-
-Why Netlify is the live host:
-
-- Vercel was tested first.
-- The linked Vercel project initially used the wrong framework preset.
-- After the repo-side fix, the account hit the free-plan deployment limit for the day.
-- Netlify successfully serves the Next.js App Router app with route handlers.
-
-### Windows Netlify Deploy Flow
-
-For manual deploys from this Windows machine:
-
-1. Work from an NTFS mirror, not directly from `F:`.
-2. Install dependencies.
-3. Run the Netlify runtime prep script so the Linux libsql native package is present in `node_modules`.
-4. Deploy with Netlify CLI.
-
-Commands:
-
-```bash
-npm install
-npm run netlify:prep
-npx netlify link --name project-manager-website-michaelunkai
-npx netlify deploy --prod --skip-functions-cache
-```
-
-Why `netlify:prep` exists:
-
-- manual Netlify CLI deploys from Windows bundle a Windows-built function tree
-- the API runtime needs the Linux native package `@libsql/linux-x64-gnu`
-- `scripts/prepare-netlify-runtime.ps1` vendors that package into `node_modules` before deploy
-
-If you deploy from Linux CI or another Linux build environment, this workaround should not be necessary.
-
-## Security And Delivery Notes
-
-- `next.config.ts` sets security headers including CSP, `X-Frame-Options`, and `X-Content-Type-Options`
-- the catalog API applies input validation and simple in-memory rate limiting
-- generated inventory and database files are explicitly included in build tracing so they ship with the app
-
-## Verified Checks
-
-These checks were run successfully against the current state:
-
-```bash
-npm run scan
 npm run typecheck
 npm run lint
 npm run test
-npm run verify:ui -- http://127.0.0.1:41337
-npm run verify:ui -- https://project-manager-website-michaelunkai.netlify.app
 ```
 
-Live production verification also confirmed:
+Regenerate the project inventory:
 
-- `GET /` renders the portfolio landing page
-- `GET /projects` renders the explorer
-- `GET /api/projects?limit=1` returns catalog data
-- `GET /api/projects/<slug>` returns project detail data
-- desktop and mobile verification both reached the same live detail page successfully
+```bash
+npm run scan
+```
 
-## Honest Caveats
+Run the UI verification script against a local or deployed site:
 
-- Local production builds on the source `F:` drive remain unreliable because of the verified `exFAT` filesystem behavior with Next.js build output.
-- The live Netlify deployment is healthy, but reproducing a manual Windows deploy requires the `netlify:prep` step because the backend depends on the Linux libsql native runtime package.
+```bash
+npm run verify:ui -- http://127.0.0.1:3105
+```
+
+## Updating The Catalog
+
+1. Run `npm run scan`.
+2. Review the generated files under `data/generated/`.
+3. Confirm the public copies under `public/inventory/` were updated consistently.
+4. Run `npm run typecheck`, `npm run lint`, and `npm run test`.
+5. Verify the UI locally or against the deployed site with `npm run verify:ui -- <url>`.
+
+The scanner intentionally stores relative paths under `F:/study` in public artifacts. It should not expose machine-specific absolute paths, secrets, or env files.
+The public UI is intentionally more selective than the raw inventory. The raw proof files remain public even when the recruiter-facing showcase is curated manually.
+
+## Verified Deployment Flow
+
+The reliable deployment path on this machine is Netlify from an NTFS mirror, not from the original `F:` drive.
+
+### Why
+
+`F:` is `exFAT`, and local production builds on that drive are not reliable for this project. The verified workaround is to mirror the repo to an NTFS path first.
+
+### Verified NTFS mirror path
+
+```text
+C:\Users\micha\AppData\Local\Temp\project-manager-website-ntfs
+```
+
+### Verified local production verification flow
+
+```bash
+# from the NTFS mirror
+npm ci
+npm run build
+npm run start -- --port 3105 --hostname 127.0.0.1
+npm run verify:ui -- http://127.0.0.1:3105
+```
+
+### Verified Netlify deployment flow
+
+```bash
+# from the NTFS mirror
+npx netlify build --debug
+npx netlify deploy --prod --no-build --dir .netlify/static --functions .netlify/functions --json --timeout 1800
+```
+
+Current public URL:
+
+```text
+https://project-manager-website-michaelunkai.netlify.app
+```
+
+## Inventory Proof Locations
+
+Public URLs:
+
+- `/inventory/scan-summary.json`
+- `/inventory/projects.json`
+- `/inventory/exclusions.json`
+- `/inventory/coverage.jsonl`
+
+Repo paths:
+
+- `data/generated/scan-summary.json`
+- `data/generated/projects.json`
+- `data/generated/exclusions.json`
+- `data/generated/coverage.jsonl`
+- `data/generated/project-catalog.db`
+- `public/inventory/scan-summary.json`
+- `public/inventory/projects.json`
+- `public/inventory/exclusions.json`
+- `public/inventory/coverage.jsonl`
+
+## Caveats
+
+- Local production builds should be done from the NTFS mirror, not directly on `F:`.
+- Immediately after a fresh hosted deploy, allow a brief propagation/warmup window before running final live verification.
+- `artifacts/ui-verification/` is for verification output only and is intentionally not committed.

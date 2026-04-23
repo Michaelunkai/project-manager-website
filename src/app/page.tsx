@@ -3,48 +3,56 @@ import Link from "next/link";
 import { FeaturedProjects } from "@/components/featured-projects";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { getFeaturedProjects, getInventorySummary, listProjects } from "@/lib/catalog";
+import { getFeaturedProjects, getInventorySummary } from "@/lib/catalog";
 
 export default async function HomePage() {
-  const [summary, featuredProjects, catalogPreview] = await Promise.all([
-    getInventorySummary(),
-    getFeaturedProjects(6),
-    listProjects({ limit: 8 }),
-  ]);
+  const [summary, featuredProjects] = await Promise.all([getInventorySummary(), getFeaturedProjects(6)]);
+  const liveProjectCount = featuredProjects.filter((project) => project.liveUrl).length;
 
   return (
     <>
       <SiteHeader />
       <main className="flex-1">
         <section className="hero-panel">
-          <div className="hero-orbit hero-orbit-a" />
-          <div className="hero-orbit hero-orbit-b" />
-          <div className="shell relative z-10 grid gap-16 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:items-end lg:py-28">
+          <div className="hero-glow hero-glow-a" />
+          <div className="hero-glow hero-glow-b" />
+          <div className="shell hero-grid">
             <div className="space-y-8">
-              <p className="eyebrow">Hiring-facing project explorer</p>
+              <p className="eyebrow">Hiring-facing engineering portfolio</p>
               <div className="space-y-5">
-                <h1 className="hero-title">
-                  Project Manager turns an entire local engineering tree into a public, searchable body of proof.
-                </h1>
+                <h1 className="hero-title">Selected work backed by real repositories, real demos, and real scan proof.</h1>
                 <p className="hero-copy">
-                  This site is built from a recursive scan of the full `F:/study` hierarchy. Every visible entry comes
-                  from local evidence: manifests, git metadata, notebooks, source trees, launch scripts, and docs.
+                  This portfolio no longer dumps the raw folder tree into the public UI. The front page is manually
+                  curated so only strong, legitimate projects remain visible, while the raw scan artifacts stay public
+                  for verification.
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="hero-actions">
                 <Link href="/projects" className="hero-action">
-                  Browse all projects
+                  Browse curated projects
                 </Link>
-                <a href="#proof" className="subtle-link">
-                  See scan proof
+                <a href="#proof" className="secondary-action">
+                  Open proof surfaces
                 </a>
               </div>
             </div>
 
-            <div className="hero-metrics">
+            <div className="hero-scorecard">
               <div>
-                <span>Visible records</span>
+                <span>Public case studies</span>
+                <strong>{featuredProjects.length}</strong>
+              </div>
+              <div>
+                <span>Repo-backed entries</span>
+                <strong>{featuredProjects.length}</strong>
+              </div>
+              <div>
+                <span>Live or download links</span>
+                <strong>{liveProjectCount}</strong>
+              </div>
+              <div>
+                <span>Raw visible records scanned</span>
                 <strong>{summary.projectCount}</strong>
               </div>
               <div>
@@ -52,12 +60,8 @@ export default async function HomePage() {
                 <strong>{summary.scannedDirectoryCount}</strong>
               </div>
               <div>
-                <span>Pruned noise paths</span>
+                <span>Noise paths pruned</span>
                 <strong>{summary.prunedDirectoryCount}</strong>
-              </div>
-              <div>
-                <span>Featured set</span>
-                <strong>{summary.featuredCount}</strong>
               </div>
             </div>
           </div>
@@ -65,66 +69,65 @@ export default async function HomePage() {
 
         <FeaturedProjects projects={featuredProjects} />
 
-        <section className="section-frame">
-          <div className="shell grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+        <section className="section-frame border-t border-white/10">
+          <div className="shell trust-grid">
             <div className="section-heading-block">
-              <p className="eyebrow">Catalog Preview</p>
-              <h2 className="section-title">The landing page stays selective. The catalog does not.</h2>
+              <p className="eyebrow">Trust Signals</p>
+              <h2 className="section-title">The public UI is selective. The evidence stays inspectable.</h2>
               <p className="section-copy">
-                Any project record surfaced by the scan remains discoverable in the explorer. Featured work is curated by
-                evidence score; the broader catalog is where breadth becomes visible.
+                The site now separates hiring-facing presentation from raw machine-generated inventory so legitimacy
+                improves without hiding the underlying scan.
               </p>
-              <Link href="/projects" className="action-link">
-                Open the explorer
-              </Link>
             </div>
 
-            <div className="space-y-4">
-              {catalogPreview.items.map((project) => (
-                <Link key={project.id} href={`/projects/${project.slug}`} className="catalog-row">
-                  <div className="space-y-3">
-                    <p className="eyebrow text-[0.7rem]">
-                      {project.category.replace(/-/g, " ")} · {project.entityType.replace(/-/g, " ")}
-                    </p>
-                    <div className="space-y-2">
-                      <h3 className="text-2xl font-semibold text-ink-bright">{project.displayName}</h3>
-                      <p className="text-base leading-7 text-ink-soft">{project.summary}</p>
-                    </div>
-                  </div>
-                  <span className="subtle-link">View</span>
-                </Link>
-              ))}
+            <div className="proof-grid">
+              <div className="proof-link">
+                <span>Manual curation</span>
+                <strong>Only the strongest case studies stay in the recruiter-facing surface.</strong>
+              </div>
+              <div className="proof-link">
+                <span>Link integrity</span>
+                <strong>Every showcased project has a working internal page and an explicit GitHub destination.</strong>
+              </div>
+              <div className="proof-link">
+                <span>Raw evidence</span>
+                <strong>The full scan summary, exclusions, coverage, and inventory remain publicly inspectable.</strong>
+              </div>
+              <div className="proof-link">
+                <span>Deployment safety</span>
+                <strong>The portfolio now serves from bundled generated data instead of a fragile runtime-only path.</strong>
+              </div>
             </div>
           </div>
         </section>
 
         <section id="proof" className="section-frame border-t border-white/10">
-          <div className="shell grid gap-10 lg:grid-cols-[1fr_1fr]">
+          <div className="shell proof-layout">
             <div className="section-heading-block">
-              <p className="eyebrow">Scan Proof</p>
-              <h2 className="section-title">The inventory stays inspectable, not mystical.</h2>
+              <p className="eyebrow">Proof Files</p>
+              <h2 className="section-title">The raw scan remains open for inspection.</h2>
               <p className="section-copy">
-                The repo includes a coverage ledger, exclusion ledger, summary report, JSON catalog export, and the
-                generated SQLite database used by the site.
+                These files are the machine-generated inventory surfaces behind the portfolio. They remain public so the
+                curated UI can be checked against the source evidence.
               </p>
             </div>
 
             <div className="proof-grid">
               <a href="/inventory/scan-summary.json" target="_blank" rel="noreferrer" className="proof-link">
                 <span>Scan summary</span>
-                <strong>{summary.projectCount} visible records with zero read errors</strong>
+                <strong>{summary.projectCount} visible records with zero read errors.</strong>
               </a>
               <a href="/inventory/projects.json" target="_blank" rel="noreferrer" className="proof-link">
-                <span>Project catalog</span>
-                <strong>Committed JSON export of the included records</strong>
+                <span>Project inventory</span>
+                <strong>The raw JSON export for the full scanned catalog.</strong>
               </a>
               <a href="/inventory/exclusions.json" target="_blank" rel="noreferrer" className="proof-link">
                 <span>Exclusions</span>
-                <strong>{summary.exclusionCount} excluded paths with explicit reasons</strong>
+                <strong>{summary.exclusionCount} excluded paths with explicit reasons.</strong>
               </a>
               <a href="/inventory/coverage.jsonl" target="_blank" rel="noreferrer" className="proof-link">
                 <span>Coverage ledger</span>
-                <strong>{summary.scannedDirectoryCount} visited directories logged by relative path</strong>
+                <strong>{summary.scannedDirectoryCount} visited directories logged by relative path.</strong>
               </a>
             </div>
           </div>

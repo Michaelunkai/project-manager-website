@@ -4501,6 +4501,7 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home","depth":5,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/tmp","depth":6,"status":"pruned","reason":"generated build or coverage directory"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/%SystemDrive%","depth":5,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects","depth":5,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/claude-agent-sdk","depth":5,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai","depth":5,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode","depth":5,"status":"scanned","reason":"directory visited"}
@@ -7933,6 +7934,7 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/tasks","depth":6,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/channels","depth":6,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/%SystemDrive%/ProgramData","depth":6,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio","depth":6,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/claude-agent-sdk/vendor","depth":6,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai/claude-agent-sdk","depth":6,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions","depth":6,"status":"scanned","reason":"directory visited"}
@@ -12635,6 +12637,7 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/media/inbound","depth":7,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/media/outbound","depth":7,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/%SystemDrive%/ProgramData/Microsoft","depth":7,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops","depth":7,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/claude-agent-sdk/vendor/ripgrep","depth":7,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai/claude-agent-sdk/vendor","depth":7,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650","depth":7,"status":"scanned","reason":"directory visited"}
@@ -15968,6 +15971,7 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/%SystemDrive%/ProgramData/Microsoft","depth":8,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data","depth":8,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/%SystemDrive%/ProgramData/Microsoft/Windows","depth":8,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use","depth":8,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/claude-agent-sdk/vendor/ripgrep/arm64-darwin","depth":8,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/claude-agent-sdk/vendor/ripgrep/arm64-linux","depth":8,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai/claude-agent-sdk/vendor/ripgrep","depth":8,"status":"scanned","reason":"directory visited"}
@@ -18207,6 +18211,10 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/segmentation_platform","depth":9,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/ShaderCache","depth":9,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/%SystemDrive%/ProgramData/Microsoft/Windows/Caches","depth":9,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center","depth":9,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.git","depth":10,"status":"pruned","reason":"dependency, cache, or VCS directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/node_modules","depth":10,"status":"pruned","reason":"dependency, cache, or VCS directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.next","depth":10,"status":"pruned","reason":"dependency, cache, or VCS directory"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai/claude-agent-sdk/vendor/ripgrep/arm64-darwin","depth":9,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/sdk/anthropic-ai/claude-agent-sdk/vendor/ripgrep/arm64-linux","depth":9,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/Custom/slash","depth":9,"status":"scanned","reason":"directory visited"}
@@ -19677,6 +19685,9 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/43","depth":10,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/45","depth":10,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/9","depth":10,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/public","depth":10,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/src","depth":10,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify","depth":10,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/A","depth":10,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/A/dist","depth":11,"status":"pruned","reason":"generated build or coverage directory"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/B","depth":10,"status":"scanned","reason":"directory visited"}
@@ -20742,6 +20753,15 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/43/A3BFD4A403A877EC","depth":11,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/45/A3BFD4A403A877EC","depth":11,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/9/A3BFD4A403A877EC","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/src/app","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins/node_modules","depth":12,"status":"pruned","reason":"dependency, cache, or VCS directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/deploy","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/edge-functions","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/v1","depth":11,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static","depth":11,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/B/.claude","depth":11,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/B/BULLETPROOF","depth":11,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/B/ClawdBotManager","depth":11,"status":"scanned","reason":"directory visited"}
@@ -21286,6 +21306,12 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/43/A3BFD4A403A877EC/A082E84FC7E0B6D3","depth":12,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/45/A3BFD4A403A877EC/85E1D98B5E932BE0","depth":12,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/optimization_guide_model_store/9/A3BFD4A403A877EC/E1FE843E2B7AD170","depth":12,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler","depth":12,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/.next","depth":13,"status":"pruned","reason":"dependency, cache, or VCS directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/node_modules","depth":13,"status":"pruned","reason":"dependency, cache, or VCS directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/deploy/v1","depth":12,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/v1/functions","depth":12,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static/_next","depth":12,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/agent-cowork/src/electron","depth":12,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/agent-cowork/src/ui","depth":12,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/src/electron/libs","depth":12,"status":"scanned","reason":"directory visited"}
@@ -21774,6 +21800,10 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons","depth":13,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons Maskable","depth":13,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/Default/Web Applications/Manifest Resources/mpnpojknpmmopombnjdcgaaiekajbnjb/Icons Monochrome","depth":13,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/.netlify","depth":13,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/.netlify/dist","depth":14,"status":"pruned","reason":"generated build or coverage directory"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/deploy/v1/blobs","depth":13,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static/_next/static","depth":13,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/agent-cowork/src/electron/libs","depth":13,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/agent-cowork/src/ui/assets","depth":13,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/agent-cowork/src/ui/components","depth":13,"status":"scanned","reason":"directory visited"}
@@ -22106,6 +22136,10 @@
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/agents/main/agent/harness-auth/codex/06bfb5171eff0241/skills/.system/skill-installer","depth":14,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/agents/main/agent/harness-auth/codex/06bfb5171eff0241/.tmp/plugins-clone-KGBr0L/.agents","depth":14,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/agents/main/agent/harness-auth/codex/06bfb5171eff0241/.tmp/plugins-clone-KGBr0L/plugins","depth":14,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/deploy/v1/blobs/deploy","depth":14,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static/_next/static/Nghvs87GhsEGIsGgyL_B_","depth":14,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static/_next/static/chunks","depth":14,"status":"scanned","reason":"directory visited"}
+{"relativePath":"AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/static/_next/static/media","depth":14,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/LocalAI/ollama/16vram/A/artifacts/nvidia-driver/595.97-extracted/NvApp/www/assets/cefclient/img/1.25X","depth":14,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/LocalAI/ollama/16vram/A/artifacts/nvidia-driver/595.97-extracted/NvApp/www/assets/cefclient/img/1.5X","depth":14,"status":"scanned","reason":"directory visited"}
 {"relativePath":"AI_ML/LocalAI/ollama/16vram/A/artifacts/nvidia-driver/595.97-extracted/NvApp/www/assets/cefclient/img/2.0X","depth":14,"status":"scanned","reason":"directory visited"}

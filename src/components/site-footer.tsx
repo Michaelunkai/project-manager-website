@@ -1,20 +1,27 @@
 export function SiteFooter() {
   return (
-    <footer className="border-t border-white/10 bg-[rgba(7,8,10,0.92)]">
-      <div className="shell flex flex-col gap-5 py-10 text-sm text-ink-soft md:flex-row md:items-end md:justify-between">
-        <div className="max-w-2xl space-y-2">
+    <footer className="site-footer">
+      <div className="shell footer-shell">
+        <div className="space-y-3">
           <p className="eyebrow">Project Manager</p>
-          <p>
-            Built as a hiring-facing explorer over the full `F:/study` hierarchy. Search, filter, and detail views all
-            read from a generated SQLite catalog seeded from the local scan artifacts committed in this repository.
+          <p className="footer-copy">
+            The public UI is manually curated for legitimacy. The raw scan artifacts remain public so the portfolio can
+            still prove what was scanned, what was excluded, and where each showcased project comes from.
           </p>
         </div>
-        <div className="space-y-2 text-right">
-          <a href="/inventory/coverage.jsonl" target="_blank" rel="noreferrer" className="block">
-            Coverage ledger
+
+        <div className="footer-links">
+          <a href="/inventory/projects.json" target="_blank" rel="noreferrer">
+            Project inventory JSON
           </a>
-          <a href="/inventory/exclusions.json" target="_blank" rel="noreferrer" className="block">
+          <a href="/inventory/scan-summary.json" target="_blank" rel="noreferrer">
+            Scan summary
+          </a>
+          <a href="/inventory/exclusions.json" target="_blank" rel="noreferrer">
             Exclusions ledger
+          </a>
+          <a href="/inventory/coverage.jsonl" target="_blank" rel="noreferrer">
+            Coverage ledger
           </a>
         </div>
       </div>

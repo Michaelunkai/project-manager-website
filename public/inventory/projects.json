@@ -56,11 +56,11 @@
     ],
     "metrics": {
       "evidenceScore": 11,
-      "sourceFileCount": 18202,
-      "directoryCount": 16990,
+      "sourceFileCount": 18203,
+      "directoryCount": 16994,
       "notebookCount": 50,
-      "imageAssetCount": 5214,
-      "lastModifiedAt": "2026-04-23T21:05:06.000Z",
+      "imageAssetCount": 5220,
+      "lastModifiedAt": "2026-04-23T22:30:44.000Z",
       "manifests": [
         "Dockerfile",
         "Makefile",
@@ -5570,7 +5570,7 @@
     "category": "full-stack",
     "summary": "High-fidelity Todoist-inspired task application built with Next.js, Prisma, PostgreSQL, and Auth.js.",
     "summarySource": "package",
-    "description": "Todoist Enhanced Fidelity is a production-oriented Todoist-style task application focused on observable parity with the Todoist web app: dense productivity UI, a restrained visual system, a persistent sidebar shell, task-detail modal flows, and a sync-style backend. - Next.js 16 App Router - React 19 - TypeScript",
+    "description": "Todoist Enhanced Fidelity is a single-user Todoist-style web app backed by a persistent PostgreSQL database and loaded with real imported Todoist workspace data. The app opens directly into the workspace with no login screen. - https://todoist-enhanced-private.netlify.app - Public root redirects straight to `/app/today` - The live app renders the imported workspace, projects, filters, and search data",
     "descriptionSource": "readme",
     "statusLabel": "Recently updated",
     "statusSource": "inferred",
@@ -5642,8 +5642,8 @@
       "sourceFileCount": 64,
       "directoryCount": 52,
       "notebookCount": 0,
-      "imageAssetCount": 16,
-      "lastModifiedAt": "2026-04-23T20:46:12.000Z",
+      "imageAssetCount": 11,
+      "lastModifiedAt": "2026-04-23T21:31:38.000Z",
       "manifests": [
         "Dockerfile",
         "docker-compose.yml",
@@ -5656,7 +5656,7 @@
         "PowerShell"
       ]
     },
-    "searchText": "todoist-enhanced-fidelity repos/fullstack/todoist-enhanced/B High-fidelity Todoist-inspired task application built with Next.js, Prisma, PostgreSQL, and Auth.js. Todoist Enhanced Fidelity is a production-oriented Todoist-style task application focused on observable parity with the Todoist web app: dense productivity UI, a restrained visual system, a persistent sidebar shell, task-detail modal flows, and a sync-style backend. - Next.js 16 App Router - React 19 - TypeScript Next.js React Tailwind CSS Prisma TypeScript Vitest Playwright JavaScript TypeScript JavaScript SQL PowerShell"
+    "searchText": "todoist-enhanced-fidelity repos/fullstack/todoist-enhanced/B High-fidelity Todoist-inspired task application built with Next.js, Prisma, PostgreSQL, and Auth.js. Todoist Enhanced Fidelity is a single-user Todoist-style web app backed by a persistent PostgreSQL database and loaded with real imported Todoist workspace data. The app opens directly into the workspace with no login screen. - https://todoist-enhanced-private.netlify.app - Public root redirects straight to `/app/today` - The live app renders the imported workspace, projects, filters, and search data Next.js React Tailwind CSS Prisma TypeScript Vitest Playwright JavaScript TypeScript JavaScript SQL PowerShell"
   },
   {
     "id": "7d288bab8679f37a51f0",
@@ -23281,6 +23281,80 @@
     "searchText": "Tools AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/tools Tools appears to be a ai ml project inferred from rust, source-tree in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/tools. Tools appears to be a ai ml project inferred from rust, source-tree in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/tools. Rust"
   },
   {
+    "id": "6fe1d426f0a005ba9d5c",
+    "slug": "devops-command-center",
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center",
+    "parentRelativePath": null,
+    "displayName": "devops-command-center",
+    "nameSource": "package",
+    "entityType": "standalone",
+    "category": "ai-ml",
+    "summary": "A daily-use full-stack DevOps dashboard designed to be both practically useful and strong enough to show to employers hiring for DevOps or platform engineering roles. - Host inventory and health - Service inventory and runtime state - Deployment timeline",
+    "summarySource": "readme",
+    "description": "A daily-use full-stack DevOps dashboard designed to be both practically useful and strong enough to show to employers hiring for DevOps or platform engineering roles. - Host inventory and health - Service inventory and runtime state - Deployment timeline",
+    "descriptionSource": "readme",
+    "statusLabel": "Recently updated",
+    "statusSource": "inferred",
+    "confidence": "high",
+    "featured": false,
+    "featuredReason": null,
+    "technologies": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "languages": [
+      "JavaScript",
+      "TypeScript"
+    ],
+    "markers": [
+      {
+        "type": "git",
+        "file": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.git",
+        "source": "direct"
+      },
+      {
+        "type": "package",
+        "file": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/package.json",
+        "detail": "devops-command-center",
+        "source": "direct"
+      },
+      {
+        "type": "readme",
+        "file": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/README",
+        "source": "direct"
+      },
+      {
+        "type": "source-tree",
+        "file": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/src",
+        "source": "direct"
+      }
+    ],
+    "links": [],
+    "notes": [
+      "Summary comes from repository metadata.",
+      "Description is derived from the README lead paragraph."
+    ],
+    "metrics": {
+      "evidenceScore": 17,
+      "sourceFileCount": 17,
+      "directoryCount": 21,
+      "notebookCount": 0,
+      "imageAssetCount": 10,
+      "lastModifiedAt": "2026-04-23T22:28:44.000Z",
+      "manifests": [
+        "package.json"
+      ],
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ]
+    },
+    "searchText": "devops-command-center AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center A daily-use full-stack DevOps dashboard designed to be both practically useful and strong enough to show to employers hiring for DevOps or platform engineering roles. - Host inventory and health - Service inventory and runtime state - Deployment timeline A daily-use full-stack DevOps dashboard designed to be both practically useful and strong enough to show to employers hiring for DevOps or platform engineering roles. - Host inventory and health - Service inventory and runtime state - Deployment timeline Next.js React Tailwind CSS TypeScript JavaScript JavaScript TypeScript"
+  },
+  {
     "id": "70717c27c8f7838a1ec7",
     "slug": "agent-cowork-12",
     "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork",
@@ -24345,6 +24419,53 @@
       ]
     },
     "searchText": "Mock Anthropic Service AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/mock-anthropic-service Mock Anthropic Service appears to be a ai ml project inferred from rust, source-tree in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/mock-anthropic-service. Mock Anthropic Service appears to be a ai ml project inferred from rust, source-tree in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/claw-code/repo/rust/crates/mock-anthropic-service. Rust"
+  },
+  {
+    "id": "c7fa51fcb371226d738d",
+    "slug": "netlify-local-plugins-2",
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins",
+    "parentRelativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center",
+    "displayName": "netlify-local-plugins",
+    "nameSource": "package",
+    "entityType": "nested-project",
+    "category": "ai-ml",
+    "summary": "This directory contains Build plugins that have been automatically installed by Netlify.",
+    "summarySource": "package",
+    "description": "This directory contains Build plugins that have been automatically installed by Netlify.",
+    "descriptionSource": "package",
+    "statusLabel": "Recently updated",
+    "statusSource": "inferred",
+    "confidence": "low",
+    "featured": false,
+    "featuredReason": null,
+    "technologies": [],
+    "languages": [],
+    "markers": [
+      {
+        "type": "package",
+        "file": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins/package.json",
+        "detail": "netlify-local-plugins",
+        "source": "direct"
+      }
+    ],
+    "links": [],
+    "notes": [
+      "Summary comes from repository metadata.",
+      "Description is inferred cautiously."
+    ],
+    "metrics": {
+      "evidenceScore": 4,
+      "sourceFileCount": 0,
+      "directoryCount": 0,
+      "notebookCount": 0,
+      "imageAssetCount": 0,
+      "lastModifiedAt": "2026-04-23T22:26:46.000Z",
+      "manifests": [
+        "package.json"
+      ],
+      "languages": []
+    },
+    "searchText": "netlify-local-plugins AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins This directory contains Build plugins that have been automatically installed by Netlify. This directory contains Build plugins that have been automatically installed by Netlify."
   },
   {
     "id": "5014ae9683618a57c20d",

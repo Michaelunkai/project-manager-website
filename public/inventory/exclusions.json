@@ -1194,6 +1194,24 @@
     "details": []
   },
   {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.next",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
     "relativePath": "AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/node_modules",
     "kind": "pruned",
     "reason": "dependency, cache, or VCS directory",
@@ -1362,6 +1380,12 @@
     "details": []
   },
   {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/plugins/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
     "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/agent-cowork/node_modules",
     "kind": "pruned",
     "reason": "dependency, cache, or VCS directory",
@@ -1392,7 +1416,25 @@
     "details": []
   },
   {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/.next",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
     "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_.openclaw_agents/main/agent/harness-auth/codex/06bfb5171eff0241/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/projects/portfolio/devops/daily-use/devops-command-center/.netlify/functions-internal/___netlify-server-handler/.netlify/dist",
     "kind": "pruned",
     "reason": "generated build or coverage directory",
     "details": []

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T21:07:25.065Z",
+  "generatedAt": "2026-04-23T22:30:56.029Z",
   "scanRoot": ".",
   "scannerVersion": "2026.04.23",
   "selfPath": "projects/Web_Development/Fullstack/project-manager-website",
@@ -8,7 +8,7 @@
     "frontend": 33,
     "backend": 6,
     "automation": 37,
-    "ai-ml": 138,
+    "ai-ml": 140,
     "desktop": 16,
     "mobile": 0,
     "data": 0,
@@ -18,17 +18,17 @@
     "other": 46
   },
   "countsByEntityType": {
-    "standalone": 253,
-    "nested-project": 79,
+    "standalone": 254,
+    "nested-project": 80,
     "component": 112,
     "ambiguous": 0
   },
-  "projectCount": 444,
+  "projectCount": 446,
   "featuredCount": 6,
-  "exclusionCount": 233,
-  "coverageCount": 22865,
-  "scannedDirectoryCount": 22657,
-  "prunedDirectoryCount": 208,
+  "exclusionCount": 240,
+  "coverageCount": 22899,
+  "scannedDirectoryCount": 22684,
+  "prunedDirectoryCount": 215,
   "errorCount": 0,
   "ambiguousCount": 0
 }

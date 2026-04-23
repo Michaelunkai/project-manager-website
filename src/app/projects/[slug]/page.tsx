@@ -22,21 +22,23 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  const related = await getRelatedProjects(project, 4);
+  const related = await getRelatedProjects(project, 3);
 
   return (
     <>
       <SiteHeader />
       <main className="flex-1">
         <section className="section-frame pt-14">
-          <div className="shell grid gap-14 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="shell detail-hero">
             <div className="space-y-7">
               <p className="eyebrow">
-                {project.category.replace(/-/g, " ")} · {project.entityType.replace(/-/g, " ")}
+                {project.discipline} · {project.category.replace(/-/g, " ")}
               </p>
+
               <div className="space-y-4">
                 <h1 className="hero-title text-left text-5xl md:text-6xl">{project.displayName}</h1>
-                <p className="hero-copy max-w-3xl">{project.summary}</p>
+                <p className="showcase-spotlight max-w-4xl">{project.spotlight}</p>
+                <p className="hero-copy max-w-4xl">{project.summary}</p>
               </div>
 
               <div className="feature-meta">
@@ -45,28 +47,31 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                 <span>Updated {formatTimestamp(project.metrics.lastModifiedAt)}</span>
               </div>
 
-              <div className="flex flex-wrap gap-4">
-                <Link href="/projects" className="subtle-link">
-                  Back to explorer
+              <div className="project-actions">
+                <Link href="/projects" className="secondary-action">
+                  Back to projects
                 </Link>
-                {project.links[0] ? (
-                  <a href={project.links[0].href} target="_blank" rel="noreferrer" className="action-link">
-                    Visit repository
+                <a href={project.repoUrl} target="_blank" rel="noreferrer" className="hero-action">
+                  GitHub repository
+                </a>
+                {project.liveUrl ? (
+                  <a href={project.liveUrl} target="_blank" rel="noreferrer" className="subtle-link">
+                    {project.liveLabel}
                   </a>
                 ) : null}
               </div>
             </div>
 
-            <div className="detail-sidecar">
+            <aside className="detail-sidecar">
               <ProjectFingerprint project={project} />
               <div className="proof-grid">
                 <div className="proof-link">
-                  <span>Summary source</span>
-                  <strong>{project.summarySource}</strong>
+                  <span>Category</span>
+                  <strong>{project.category.replace(/-/g, " ")}</strong>
                 </div>
                 <div className="proof-link">
-                  <span>Description source</span>
-                  <strong>{project.descriptionSource}</strong>
+                  <span>Entity type</span>
+                  <strong>{project.entityType.replace(/-/g, " ")}</strong>
                 </div>
                 <div className="proof-link">
                   <span>Confidence</span>
@@ -77,46 +82,61 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                   <strong>{project.metrics.evidenceScore}</strong>
                 </div>
               </div>
+            </aside>
+          </div>
+        </section>
+
+        <section className="section-frame border-t border-white/10">
+          <div className="shell detail-columns">
+            <div className="section-heading-block">
+              <p className="eyebrow">Why It’s Public</p>
+              <h2 className="section-title">Why this project earns a public slot.</h2>
+              <p className="section-copy">{project.description}</p>
+            </div>
+
+            <div className="proof-list detail-proof-list">
+              {project.proofPoints.map((proofPoint) => (
+                <p key={proofPoint}>{proofPoint}</p>
+              ))}
             </div>
           </div>
         </section>
 
         <section className="section-frame border-t border-white/10">
-          <div className="shell grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="shell detail-columns">
             <div className="section-heading-block">
-              <p className="eyebrow">Project Story</p>
-              <h2 className="section-title">What the scan can honestly say about this project.</h2>
+              <p className="eyebrow">Technical Footprint</p>
+              <h2 className="section-title">The scan-backed technical shape of the work.</h2>
             </div>
-            <div className="space-y-8">
-              <p className="text-lg leading-8 text-ink-soft">{project.description}</p>
-              <div className="proof-grid">
-                <div className="proof-link">
-                  <span>Status</span>
-                  <strong>{project.statusLabel}</strong>
-                </div>
-                <div className="proof-link">
-                  <span>Languages</span>
-                  <strong>{project.languages.join(", ") || "Mixed stack"}</strong>
-                </div>
-                <div className="proof-link">
-                  <span>Technologies</span>
-                  <strong>{project.technologies.join(", ") || "No framework inference"}</strong>
-                </div>
-                <div className="proof-link">
-                  <span>Manifests</span>
-                  <strong>{project.metrics.manifests.join(", ") || "No manifest list"}</strong>
-                </div>
+
+            <div className="proof-grid">
+              <div className="proof-link">
+                <span>Technologies</span>
+                <strong>{project.technologies.join(", ") || "No framework inference"}</strong>
+              </div>
+              <div className="proof-link">
+                <span>Languages</span>
+                <strong>{project.languages.join(", ") || "Mixed stack"}</strong>
+              </div>
+              <div className="proof-link">
+                <span>Manifests</span>
+                <strong>{project.metrics.manifests.join(", ") || "No manifest list"}</strong>
+              </div>
+              <div className="proof-link">
+                <span>Markers</span>
+                <strong>{project.markers.length} direct evidence markers captured by the scan.</strong>
               </div>
             </div>
           </div>
         </section>
 
         <section className="section-frame border-t border-white/10">
-          <div className="shell grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="shell detail-columns">
             <div className="section-heading-block">
               <p className="eyebrow">Evidence</p>
-              <h2 className="section-title">Markers and notes tied directly to the local scan.</h2>
+              <h2 className="section-title">Markers tied directly to the raw scan.</h2>
             </div>
+
             <div className="space-y-4">
               {project.markers.map((marker) => (
                 <div key={`${marker.type}-${marker.file}`} className="catalog-row">
@@ -128,11 +148,6 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
                   <span className="text-sm uppercase tracking-[0.2em] text-ink-soft">{marker.source}</span>
                 </div>
               ))}
-              {project.notes.map((note) => (
-                <p key={note} className="text-base leading-7 text-ink-soft">
-                  {note}
-                </p>
-              ))}
             </div>
           </div>
         </section>
@@ -141,18 +156,29 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
           <div className="shell space-y-8">
             <div className="section-heading-block">
               <p className="eyebrow">Related Work</p>
-              <h2 className="section-title">Neighboring projects surfaced from the same scan.</h2>
+              <h2 className="section-title">More curated projects from the same portfolio.</h2>
             </div>
-            <div className="space-y-4">
+
+            <div className="showcase-grid">
               {related.map((item) => (
-                <Link key={item.id} href={`/projects/${item.slug}`} className="catalog-row">
-                  <div className="space-y-2">
-                    <p className="eyebrow text-[0.7rem]">{item.category.replace(/-/g, " ")}</p>
-                    <h3 className="text-2xl font-semibold text-ink-bright">{item.displayName}</h3>
-                    <p className="text-base leading-7 text-ink-soft">{item.summary}</p>
+                <article key={item.id} className="showcase-card compact-showcase-card">
+                  <div className="space-y-3">
+                    <p className="eyebrow">
+                      {item.discipline} · {item.category.replace(/-/g, " ")}
+                    </p>
+                    <h3 className="showcase-title text-3xl">{item.displayName}</h3>
+                    <p className="showcase-copy">{item.summary}</p>
                   </div>
-                  <span className="subtle-link">Open</span>
-                </Link>
+
+                  <div className="project-actions">
+                    <Link href={`/projects/${item.slug}`} className="secondary-action">
+                      Open case study
+                    </Link>
+                    <a href={item.repoUrl} target="_blank" rel="noreferrer" className="subtle-link">
+                      GitHub
+                    </a>
+                  </div>
+                </article>
               ))}
             </div>
           </div>

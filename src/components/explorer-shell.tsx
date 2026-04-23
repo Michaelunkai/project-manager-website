@@ -4,10 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { startTransition, useDeferredValue, useEffect, useRef, useState } from "react";
 
-import type { ProjectRecord } from "@/lib/inventory";
+import type { PortfolioProject } from "@/lib/showcase";
 
 interface ExplorerShellProps {
-  initialItems: ProjectRecord[];
+  initialItems: PortfolioProject[];
   initialTotal: number;
   categories: string[];
   entityTypes: string[];
@@ -27,7 +27,7 @@ async function requestCatalog(params: URLSearchParams) {
   }
 
   return (await response.json()) as {
-    items: ProjectRecord[];
+    items: PortfolioProject[];
     total: number;
   };
 }
@@ -79,24 +79,26 @@ export function ExplorerShell({
         setError(fetchError instanceof Error ? fetchError.message : "Unable to refresh the catalog.");
       }
     })();
-  }, [category, entityType, deferredSearch]);
+  }, [category, deferredSearch, entityType]);
 
   return (
     <div className="catalog-shell">
       <aside className="catalog-sidebar">
-        <p className="eyebrow">Explorer</p>
-        <h2 className="text-3xl font-semibold text-ink-bright">Browse every visible project signal.</h2>
-        <p className="text-base leading-7 text-ink-soft">
-          Filter the scan output by project type and category, then jump into a detail view with evidence markers,
-          metrics, relative path, and related work.
-        </p>
+        <div className="space-y-4">
+          <p className="eyebrow">Showcase Filters</p>
+          <h2 className="sidebar-title">Search the curated portfolio instead of every folder in the drive.</h2>
+          <p className="sidebar-copy">
+            The recruiter-facing API only returns the manually selected showcase set. The full raw scan still lives in
+            the public inventory files for proof.
+          </p>
+        </div>
 
         <label className="field-block">
           <span>Search</span>
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Search names, paths, stacks, or descriptions"
+            placeholder="Search domains, stacks, or project names"
             className="field-input"
           />
         </label>
@@ -126,91 +128,77 @@ export function ExplorerShell({
         </label>
 
         <div className="catalog-stat-block">
-          <span>Total visible records</span>
+          <span>Visible case studies</span>
           <strong>{total}</strong>
         </div>
       </aside>
 
       <div className="catalog-results">
         <div className="catalog-toolbar">
-          <p>{loading ? "Refreshing catalog..." : `${items.length} loaded of ${total} visible records`}</p>
+          <p>{loading ? "Refreshing showcase..." : `${items.length} loaded of ${total} public case studies`}</p>
           {error ? <p className="text-[#f1a36f]">{error}</p> : null}
         </div>
 
-        <div className="space-y-4">
+        <div className="showcase-list">
           {items.map((project, index) => (
             <motion.article
               key={project.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: Math.min(index * 0.02, 0.18), duration: 0.35 }}
-              className="catalog-row"
+              transition={{ delay: Math.min(index * 0.03, 0.18), duration: 0.35 }}
+              className="showcase-list-card"
             >
-              <div className="space-y-3">
-                <div className="flex flex-wrap items-center gap-3">
-                  <p className="eyebrow text-[0.7rem]">
-                    {project.category.replace(/-/g, " ")} · {project.entityType.replace(/-/g, " ")}
+              <div className="space-y-4">
+                <div className="showcase-card-head">
+                  <p className="eyebrow">
+                    {project.discipline} · {project.category.replace(/-/g, " ")}
                   </p>
-                  {project.featured ? <span className="tech-badge">Featured</span> : null}
+                  <span className="status-pill">{project.liveUrl ? "Live link" : "Repository link"}</span>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-2xl font-semibold text-ink-bright">{project.displayName}</h3>
-                  <p className="text-base leading-7 text-ink-soft">{project.summary}</p>
+
+                <div className="space-y-3">
+                  <h3 className="showcase-title">{project.displayName}</h3>
+                  <p className="showcase-spotlight">{project.spotlight}</p>
+                  <p className="showcase-copy">{project.summary}</p>
                 </div>
-                <div className="feature-meta">
+
+                <div className="showcase-meta">
                   <span>{project.relativePath}</span>
-                  <span>{project.languages.join(" · ") || "Mixed stack"}</span>
                   <span>{project.metrics.sourceFileCount} source files</span>
+                  <span>{project.languages.slice(0, 3).join(" · ") || "Mixed stack"}</span>
+                </div>
+
+                <div className="tech-row">
+                  {project.technologies.slice(0, 5).map((technology) => (
+                    <span key={technology} className="tech-badge">
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="proof-list compact-proof-list">
+                  {project.proofPoints.map((proofPoint) => (
+                    <p key={proofPoint}>{proofPoint}</p>
+                  ))}
                 </div>
               </div>
-              <Link href={`/projects/${project.slug}`} className="action-link">
-                Inspect
-              </Link>
+
+              <div className="project-actions">
+                <Link href={`/projects/${project.slug}`} className="hero-action">
+                  Open case study
+                </Link>
+                <a href={project.repoUrl} target="_blank" rel="noreferrer" className="secondary-action">
+                  GitHub
+                </a>
+                {project.liveUrl ? (
+                  <a href={project.liveUrl} target="_blank" rel="noreferrer" className="subtle-link">
+                    {project.liveLabel}
+                  </a>
+                ) : null}
+              </div>
             </motion.article>
           ))}
         </div>
-
-        {items.length < total ? (
-          <button
-            type="button"
-            className="load-more-button"
-            onClick={() => {
-              void (async () => {
-                const requestId = requestIdRef.current + 1;
-                requestIdRef.current = requestId;
-                setLoading(true);
-                setError(null);
-
-                try {
-                  const params = new URLSearchParams({
-                    search: deferredSearch,
-                    category,
-                    entityType,
-                    limit: "24",
-                    offset: String(items.length),
-                  });
-
-                  const payload = await requestCatalog(params);
-                  if (requestId !== requestIdRef.current) {
-                    return;
-                  }
-
-                  startTransition(() => {
-                    setItems((current) => [...current, ...payload.items]);
-                    setTotal(payload.total);
-                    setLoading(false);
-                  });
-                } catch (fetchError) {
-                  setLoading(false);
-                  setError(fetchError instanceof Error ? fetchError.message : "Unable to load more projects.");
-                }
-              })();
-            }}
-            disabled={loading}
-          >
-            {loading ? "Loading..." : "Load more"}
-          </button>
-        ) : null}
       </div>
     </div>
   );

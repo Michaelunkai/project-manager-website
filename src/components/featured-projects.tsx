@@ -1,64 +1,69 @@
 import Link from "next/link";
 
-import type { ProjectRecord } from "@/lib/inventory";
+import type { PortfolioProject } from "@/lib/showcase";
 
-import { ProjectFingerprint } from "./project-fingerprint";
-
-export function FeaturedProjects({ projects }: { projects: ProjectRecord[] }) {
+export function FeaturedProjects({ projects }: { projects: PortfolioProject[] }) {
   return (
     <section id="featured" className="section-frame">
-      <div className="shell">
-        <div className="section-heading-block">
-          <p className="eyebrow">Featured Work</p>
-          <h2 className="section-title">The first pass through the catalog favors projects with real depth, docs, and signal.</h2>
+      <div className="shell space-y-10">
+        <div className="section-heading-block max-w-3xl">
+          <p className="eyebrow">Selected Work</p>
+          <h2 className="section-title">Only the projects that hold up under scrutiny make the public front page.</h2>
           <p className="section-copy">
-            Featured entries are chosen automatically from scan evidence, repository metadata, documentation quality, and
-            path quality. The full catalog stays broader than this section.
+            Every entry below has an internal case-study page, an explicit GitHub destination, and manual curation over
+            the raw scan output so the public surface feels intentional instead of accidental.
           </p>
         </div>
 
-        <div className="mt-12 space-y-10">
+        <div className="showcase-grid">
           {projects.map((project, index) => (
-            <article
-              key={project.id}
-              className="featured-rail"
-              data-flip={index % 2 === 1 ? "true" : "false"}
-            >
-              <div className="space-y-5">
-                <p className="feature-index">{String(index + 1).padStart(2, "0")}</p>
-                <div className="space-y-4">
-                  <p className="eyebrow">{project.category.replace(/-/g, " ")} · {project.entityType.replace(/-/g, " ")}</p>
-                  <h3 className="feature-title">{project.displayName}</h3>
-                  <p className="feature-copy">{project.summary}</p>
-                </div>
-
-                <div className="feature-meta">
-                  <span>{project.relativePath}</span>
-                  <span>{project.languages.slice(0, 3).join(" · ") || "Mixed stack"}</span>
-                  <span>{project.metrics.sourceFileCount} source files tracked</span>
-                </div>
-
-                <div className="flex flex-wrap gap-3 text-sm text-ink-soft">
-                  {project.technologies.slice(0, 5).map((technology) => (
-                    <span key={technology} className="tech-badge">
-                      {technology}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex flex-wrap items-center gap-4 pt-2">
-                  <Link href={`/projects/${project.slug}`} className="action-link">
-                    Open project
-                  </Link>
-                  {project.links[0] ? (
-                    <a href={project.links[0].href} target="_blank" rel="noreferrer" className="subtle-link">
-                      Visit source
-                    </a>
-                  ) : null}
-                </div>
+            <article key={project.id} className="showcase-card">
+              <div className="showcase-card-head">
+                <p className="eyebrow">
+                  {String(index + 1).padStart(2, "0")} · {project.discipline}
+                </p>
+                <span className="status-pill">{project.liveUrl ? "Live-backed" : "Repo-backed"}</span>
               </div>
 
-              <ProjectFingerprint project={project} />
+              <div className="space-y-4">
+                <h3 className="showcase-title">{project.displayName}</h3>
+                <p className="showcase-spotlight">{project.spotlight}</p>
+                <p className="showcase-copy">{project.summary}</p>
+              </div>
+
+              <div className="showcase-meta">
+                <span>{project.relativePath}</span>
+                <span>{project.metrics.sourceFileCount} source files</span>
+                <span>{project.languages.slice(0, 3).join(" · ") || "Mixed stack"}</span>
+              </div>
+
+              <div className="tech-row">
+                {project.technologies.slice(0, 5).map((technology) => (
+                  <span key={technology} className="tech-badge">
+                    {technology}
+                  </span>
+                ))}
+              </div>
+
+              <div className="proof-list">
+                {project.proofPoints.map((proofPoint) => (
+                  <p key={proofPoint}>{proofPoint}</p>
+                ))}
+              </div>
+
+              <div className="project-actions">
+                <Link href={`/projects/${project.slug}`} className="hero-action">
+                  Open case study
+                </Link>
+                <a href={project.repoUrl} target="_blank" rel="noreferrer" className="secondary-action">
+                  GitHub
+                </a>
+                {project.liveUrl ? (
+                  <a href={project.liveUrl} target="_blank" rel="noreferrer" className="subtle-link">
+                    {project.liveLabel}
+                  </a>
+                ) : null}
+              </div>
             </article>
           ))}
         </div>

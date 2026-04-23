@@ -14,9 +14,9 @@ const displayFont = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Project Manager",
+  title: "Project Manager | Curated Engineering Portfolio",
   description:
-    "A hiring-facing project atlas generated from the full F:/study hierarchy, with searchable catalog data served from a real database.",
+    "A hiring-facing portfolio that curates the strongest projects from the F:/study tree while keeping the raw scan proof public.",
 };
 
 export default function RootLayout({
