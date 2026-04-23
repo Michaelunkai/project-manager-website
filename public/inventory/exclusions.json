@@ -1,0 +1,1376 @@
+[
+  {
+    "relativePath": "projects/Web_Development/Fullstack/project-manager-website",
+    "kind": "self",
+    "reason": "Excluded from inventory counts so the portfolio application does not count itself as source work.",
+    "details": []
+  },
+  {
+    "relativePath": ".git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Platforms/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "codex-unem-smoke-20260421-102728",
+    "kind": "generated",
+    "reason": "generated smoke workspace",
+    "details": []
+  },
+  {
+    "relativePath": "codex-unem-smoke-20260421-102826",
+    "kind": "generated",
+    "reason": "generated smoke workspace",
+    "details": []
+  },
+  {
+    "relativePath": "Platforms/windows/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/GameAutoDownInstall/.vscode",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/pc-control-server/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/pc-control-server/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/clawd/temp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/RamOptimzer/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/core/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dom/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/python/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ram/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/rammanager/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/react-dom/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/startupmaster/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/study/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Platforms/windows/autohotkey/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/clawdbot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/games/gametime/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/games/gametime/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/games/QuadDown/.vscode",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/games/game-launcher-pro/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/pc-control-server/src/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Version_control/git/gitit/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "pr ojects/games/QuadDown/.vscode",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/apps/RamManager/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/everythingCLI/a/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/everythingCLI/b/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/floating-ui/core/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/floating-ui/dom/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/floating-ui/react-dom/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/floating-ui/utils/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/gitdesk/GitDesk/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/lib/python3.9/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/megatodo/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/programming/python/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/speach2text/react/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/startupmanagerclean/StartupManager/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/todoist-enhanced/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/tovplay/tovplay-frontend/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Dev_Toolchain/dev-toolchain/programming/python/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Dev_Toolchain/IDE/gitdesk/GitDesk/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Platforms/windows/autohotkey/mymainahk/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Desktop_Apps/desktop_apps/GameTime/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Desktop_Apps/desktop_apps/GameTime/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Web_Development/Fullstack/todoist-enhanced/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Web_Development/Fullstack/todoist-enhanced/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Web_Development/Fullstack/todoist-enhanced/.next",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Web_Development/Fullstack/todoist-enhanced/.vercel",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/clawdbot/B/ClawdBotManager/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "WebBuilding/projects/MegaToDo/client/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "WebBuilding/projects/MegaToDo/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "WebBuilding/projects/MegaToDo/tv-control/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/python/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/B/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/B/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/_source_fidelity/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/_todoist_asar/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/python/apps/RamManager/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/wrappers/ClawdBot/A/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/scripts/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/backup-claw/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/listclaw/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/npm-global/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "projects/Desktop_Apps/desktop_apps/DotNET/game-launcher-pro/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Windows/Applications/tools/uninstallpro/UninstallPro/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/mingw64/mingw64/lib/python3.9/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/mingw64/ming w64/lib/python3.9/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/A/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/Ferdium/resources/app.asar.unpacked/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/out",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/myapps/compiled_python/wallpaper/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/myapps/compiled_python/wallpaper/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/programming/frontend/javascript/Config/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/shells/powershell/scripts/bots/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/shells/powershell/scripts/misc/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/version_control/git/GitDesk/GitDesk/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/web-development/Fullstack/todoist-enhanced/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/Gemini/gemini-api-key-rotator-proxy-server/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/scripts/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Dev_Toolchain/dev-toolchain/programming/frontend/javascript/Config/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai-ml/AI_and_Machine_Learning/Artificial_Intelligence/cli/openclaw/.git",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/frontend/javascript/Config/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/python/apps/RamManager/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/python/apps/RamManager/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/python/apps/RestorePoint/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/myapps/compiled_python/myg/bb/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/myapps/compiled_python/myg/k/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/projects/Web_Development/Fullstack/todoist-enhanced/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Dev_Toolchain/programming/.NET/projects/C_Sharp/startupmanagerclean/StartupManager/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_and_machine_learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/C#/OpenClawRunner/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/C#/OpenClawTray/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/C#/StartupMaster/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/C#/StartupMaster/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/c++/powershell_sim/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/configuration-editing/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/debug-auto-launch/.vscode",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/debug-auto-launch/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/debug-server-ready/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/emmet/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/extension-editing/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/git-base/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/git/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/github-authentication/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/github/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/grunt/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/gulp/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/ipynb/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/jake/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/less/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/markdown-language-features/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/markdown-math/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/media-preview/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/merge-conflict/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/microsoft-authentication/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/ms-vscode.js-debug-companion/out",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/ms-vscode.vscode-js-profile-table/out",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/npm/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/php-language-features/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/razor/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/references-view/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/rust/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/search-result/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/simple-browser/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/terminal-suggest/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/tunnel-forwarding/.vscode",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/tunnel-forwarding/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/typescript-language-features/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/yaml/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/node_modules.asar.unpacked/vsda/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/programming/C++/mingw-complete/mingw64/lib/python3.9/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_.openclaw_workspace-openclaw-main/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_AppData_Local_npm-global_node_modules_openclaw/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_AppData_Local_npm-global_node_modules_openclaw/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_AppData_Roaming_npm_node_modules_clawdbot/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_AppData_Roaming_npm_node_modules_clawdbot/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/cases/python-slugify/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/cases/instruction-alerts/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/cases/context-policy/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gpt-oss_20b-20260421-030405",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gpt-oss_20b-20260421-030442",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/aider-gpt-oss_20b-20260421-030509",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gpt-oss_20b-20260421-054010",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3-coder_latest-20260421-054204",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-054331",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-060120",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/raw-experimental-gpt-oss_20b-20260421-060254",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3-coder_latest-20260421-061018",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-064212",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-070416",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-070419",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3.5_latest-20260421-071056",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-glm-4.7-flash_latest-20260421-071111",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gemma4_latest-20260421-071128",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gemma3_27b-20260421-071145",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3.5_latest-20260421-071252",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3_30b-a3b-20260421-071327",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3.5_latest-20260421-072819",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-qwen3-coder_latest-20260421-072911",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/codex-gpt-oss_20b-20260421-073102",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/aider-qwen3.5_latest-20260421-073344",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/LocalAI/ollama/16vram/A/benchmarks/runs/aider-qwen3-coder_latest-20260421-073802",
+    "kind": "generated",
+    "reason": "benchmark run workspace",
+    "details": []
+  },
+  {
+    "relativePath": "Dev_Toolchain/dev-toolchain/programming/C++/mingw-complete/mingw64/lib/python3.9/venv",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/frontend/javascript/Config/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/python/apps/RamManager/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/python/apps/RestorePoint/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai-ml/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_and_machine_learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_and_machine_learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_ml/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/dev_toolchain/programming/.NET/projects/C#/UninstallPro/UninstallPro/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/css-language-features/client/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/css-language-features/server/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/html-language-features/client/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/html-language-features/server/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/json-language-features/client/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/installed/VSCode/resources/app/extensions/json-language-features/server/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/scratch_case_02/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/scratch_case_04/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/scratch_case_06/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/.NET/projects/C#/StartupMaster/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/.NET/projects/C#/StartupMaster/obj",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/Dev_Toolchain/programming/.NET/projects/c++/powershell_sim/build",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_ml/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/ai_ml/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup/oll90-ui/interactive/app/backend/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup/oll90-ui/interactive/app/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup/oll90-ui/interactive/app/frontend/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup2/oll90-ui/interactive/app/backend/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup2/oll90-ui/interactive/app/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup2/oll90-ui/interactive/app/frontend/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_AppData_Roaming_npm_node_modules_clawdbot/extensions/memory-lancedb/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/browser/openclaw/user-data/Default/Web Applications/Temp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificia l_Intelligence/cli/claudecode/sessions/claudecode-1771405650/wrappers/ClawdBot/A/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup/oll90-ui/interactive/app/backend/engine/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup/oll90-ui/interactive/app/backend/routers/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup2/oll90-ui/interactive/app/backend/engine/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup2/oll90-ui/interactive/app/backend/routers/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup3/ollama-setup/oll90-ui/interactive/app/backend/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup3/ollama-setup/oll90-ui/interactive/app/frontend/dist",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup3/ollama-setup/oll90-ui/interactive/app/frontend/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/agents/main/agent/harness-auth/codex/06bfb5171eff0241/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/wrappers/agent-cowork/agent-cowork/node_modules",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/benchmark_runs/case01_tune/01_fix_calculator/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "Learning/01/01/AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/interpreterAI/benchmark_runs/case_mix_tune/02_build_slugify/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup3/ollama-setup/oll90-ui/interactive/app/backend/engine/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/cli/claudecode/ollama-setup3/ollama-setup/oll90-ui/interactive/app/backend/routers/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/reports/migration-rollback-20260423-172305/directories/C__Users_micha_.openclaw_agents/main/agent/harness-auth/codex/06bfb5171eff0241/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
+    "details": []
+  }
+]
