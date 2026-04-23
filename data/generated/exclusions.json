@@ -366,6 +366,18 @@
     "details": []
   },
   {
+    "relativePath": "repos/fullstack/todoist-enhanced/B/.next",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/B/.vercel",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
     "relativePath": "repos/fullstack/todoist-enhanced/_source_fidelity/.git",
     "kind": "pruned",
     "reason": "dependency, cache, or VCS directory",
@@ -417,6 +429,12 @@
     "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/npm-global/node_modules",
     "kind": "pruned",
     "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/tmp",
+    "kind": "pruned",
+    "reason": "generated build or coverage directory",
     "details": []
   },
   {
@@ -595,6 +613,12 @@
   },
   {
     "relativePath": "repos/dev_toolchain/programming/python/apps/RestorePoint/__pycache__",
+    "kind": "pruned",
+    "reason": "dependency, cache, or VCS directory",
+    "details": []
+  },
+  {
+    "relativePath": "repos/fullstack/todoist-enhanced/B/.netlify/plugins/node_modules",
     "kind": "pruned",
     "reason": "dependency, cache, or VCS directory",
     "details": []

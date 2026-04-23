@@ -56,11 +56,11 @@
     ],
     "metrics": {
       "evidenceScore": 11,
-      "sourceFileCount": 18154,
-      "directoryCount": 16442,
+      "sourceFileCount": 18202,
+      "directoryCount": 16990,
       "notebookCount": 50,
-      "imageAssetCount": 5064,
-      "lastModifiedAt": "2026-04-23T18:40:10.000Z",
+      "imageAssetCount": 5214,
+      "lastModifiedAt": "2026-04-23T21:05:06.000Z",
       "manifests": [
         "Dockerfile",
         "Makefile",
@@ -5639,11 +5639,11 @@
     ],
     "metrics": {
       "evidenceScore": 25,
-      "sourceFileCount": 68,
-      "directoryCount": 50,
+      "sourceFileCount": 64,
+      "directoryCount": 52,
       "notebookCount": 0,
-      "imageAssetCount": 11,
-      "lastModifiedAt": "2026-04-23T18:38:24.000Z",
+      "imageAssetCount": 16,
+      "lastModifiedAt": "2026-04-23T20:46:12.000Z",
       "manifests": [
         "Dockerfile",
         "docker-compose.yml",
@@ -9412,6 +9412,53 @@
       ]
     },
     "searchText": "QuadDownDownloader projects/games/QuadDown/binaries/QuadDownDownloader QuadDownDownloader appears to be a game project inferred from python, source-tree in projects/games/QuadDown/binaries/QuadDownDownloader. QuadDownDownloader appears to be a game project inferred from python, source-tree in projects/games/QuadDown/binaries/QuadDownDownloader. Python"
+  },
+  {
+    "id": "cd6908c982098c541846",
+    "slug": "netlify-local-plugins",
+    "relativePath": "repos/fullstack/todoist-enhanced/B/.netlify/plugins",
+    "parentRelativePath": "repos/fullstack/todoist-enhanced/B",
+    "displayName": "netlify-local-plugins",
+    "nameSource": "package",
+    "entityType": "nested-project",
+    "category": "library",
+    "summary": "This directory contains Build plugins that have been automatically installed by Netlify.",
+    "summarySource": "package",
+    "description": "This directory contains Build plugins that have been automatically installed by Netlify.",
+    "descriptionSource": "package",
+    "statusLabel": "Recently updated",
+    "statusSource": "inferred",
+    "confidence": "low",
+    "featured": false,
+    "featuredReason": null,
+    "technologies": [],
+    "languages": [],
+    "markers": [
+      {
+        "type": "package",
+        "file": "repos/fullstack/todoist-enhanced/B/.netlify/plugins/package.json",
+        "detail": "netlify-local-plugins",
+        "source": "direct"
+      }
+    ],
+    "links": [],
+    "notes": [
+      "Summary comes from repository metadata.",
+      "Description is inferred cautiously."
+    ],
+    "metrics": {
+      "evidenceScore": 4,
+      "sourceFileCount": 0,
+      "directoryCount": 0,
+      "notebookCount": 0,
+      "imageAssetCount": 0,
+      "lastModifiedAt": "2026-04-23T20:46:04.000Z",
+      "manifests": [
+        "package.json"
+      ],
+      "languages": []
+    },
+    "searchText": "netlify-local-plugins repos/fullstack/todoist-enhanced/B/.netlify/plugins This directory contains Build plugins that have been automatically installed by Netlify. This directory contains Build plugins that have been automatically installed by Netlify."
   },
   {
     "id": "d0b8e0787e501d35b602",
@@ -21843,7 +21890,8 @@
     "languages": [
       "Python",
       "PowerShell",
-      "JavaScript"
+      "JavaScript",
+      "Shell"
     ],
     "markers": [
       {
@@ -21859,19 +21907,20 @@
     ],
     "metrics": {
       "evidenceScore": 6,
-      "sourceFileCount": 24,
-      "directoryCount": 156,
+      "sourceFileCount": 25,
+      "directoryCount": 170,
       "notebookCount": 0,
       "imageAssetCount": 12,
-      "lastModifiedAt": "2026-04-23T18:00:34.000Z",
+      "lastModifiedAt": "2026-04-23T20:15:58.000Z",
       "manifests": [],
       "languages": [
         "Python",
         "PowerShell",
-        "JavaScript"
+        "JavaScript",
+        "Shell"
       ]
     },
-    "searchText": "Workspace Moltbot AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot Workspace Moltbot appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot. Workspace Moltbot appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot. PowerShell Python PowerShell JavaScript"
+    "searchText": "Workspace Moltbot AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot Workspace Moltbot appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot. Workspace Moltbot appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot. PowerShell Python PowerShell JavaScript Shell"
   },
   {
     "id": "466520628a2b1e557b34",
@@ -21964,7 +22013,8 @@
     "languages": [
       "Python",
       "PowerShell",
-      "JavaScript"
+      "JavaScript",
+      "Shell"
     ],
     "markers": [
       {
@@ -21980,19 +22030,20 @@
     ],
     "metrics": {
       "evidenceScore": 6,
-      "sourceFileCount": 24,
-      "directoryCount": 156,
+      "sourceFileCount": 25,
+      "directoryCount": 170,
       "notebookCount": 0,
       "imageAssetCount": 12,
-      "lastModifiedAt": "2026-04-23T18:00:34.000Z",
+      "lastModifiedAt": "2026-04-23T20:15:58.000Z",
       "manifests": [],
       "languages": [
         "Python",
         "PowerShell",
-        "JavaScript"
+        "JavaScript",
+        "Shell"
       ]
     },
-    "searchText": "Workspace Moltbot2 AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2 Workspace Moltbot2 appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2. Workspace Moltbot2 appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2. PowerShell Python PowerShell JavaScript"
+    "searchText": "Workspace Moltbot2 AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2 Workspace Moltbot2 appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2. Workspace Moltbot2 appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-moltbot2. PowerShell Python PowerShell JavaScript Shell"
   },
   {
     "id": "6222e8c8f4acfa89192b",
@@ -22018,7 +22069,8 @@
     "languages": [
       "Python",
       "PowerShell",
-      "JavaScript"
+      "JavaScript",
+      "Shell"
     ],
     "markers": [
       {
@@ -22039,19 +22091,20 @@
     ],
     "metrics": {
       "evidenceScore": 10,
-      "sourceFileCount": 26,
-      "directoryCount": 157,
+      "sourceFileCount": 27,
+      "directoryCount": 171,
       "notebookCount": 0,
       "imageAssetCount": 12,
-      "lastModifiedAt": "2026-04-23T18:00:34.000Z",
+      "lastModifiedAt": "2026-04-23T20:15:58.000Z",
       "manifests": [],
       "languages": [
         "Python",
         "PowerShell",
-        "JavaScript"
+        "JavaScript",
+        "Shell"
       ]
     },
-    "searchText": "Workspace Openclaw AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw Workspace Openclaw appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw. Workspace Openclaw appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw. PowerShell Python PowerShell JavaScript"
+    "searchText": "Workspace Openclaw AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw Workspace Openclaw appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw. Workspace Openclaw appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw. PowerShell Python PowerShell JavaScript Shell"
   },
   {
     "id": "e1cb1f955c64f49ecaab",
@@ -22281,7 +22334,8 @@
     "languages": [
       "Python",
       "PowerShell",
-      "JavaScript"
+      "JavaScript",
+      "Shell"
     ],
     "markers": [
       {
@@ -22297,19 +22351,20 @@
     ],
     "metrics": {
       "evidenceScore": 6,
-      "sourceFileCount": 26,
-      "directoryCount": 162,
+      "sourceFileCount": 27,
+      "directoryCount": 176,
       "notebookCount": 0,
       "imageAssetCount": 12,
-      "lastModifiedAt": "2026-04-23T18:00:34.000Z",
+      "lastModifiedAt": "2026-04-23T20:15:58.000Z",
       "manifests": [],
       "languages": [
         "Python",
         "PowerShell",
-        "JavaScript"
+        "JavaScript",
+        "Shell"
       ]
     },
-    "searchText": "Workspace Openclaw Main AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main Workspace Openclaw Main appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main. Workspace Openclaw Main appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main. PowerShell Python PowerShell JavaScript"
+    "searchText": "Workspace Openclaw Main AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main Workspace Openclaw Main appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main. Workspace Openclaw Main appears to be a ai ml project inferred from PowerShell and evidence in AI_ML/AI_and_Machine_Learning/Artificial_Intelligence/openclaw/openclaw-home/workspace-openclaw-main. PowerShell Python PowerShell JavaScript Shell"
   },
   {
     "id": "29633a68238bc21603ba",

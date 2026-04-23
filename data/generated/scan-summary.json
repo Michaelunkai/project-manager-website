@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-23T18:40:35.437Z",
+  "generatedAt": "2026-04-23T21:07:25.065Z",
   "scanRoot": ".",
   "scannerVersion": "2026.04.23",
   "selfPath": "projects/Web_Development/Fullstack/project-manager-website",
@@ -13,22 +13,22 @@
     "mobile": 0,
     "data": 0,
     "ops": 28,
-    "library": 95,
+    "library": 96,
     "game": 27,
     "other": 46
   },
   "countsByEntityType": {
     "standalone": 253,
-    "nested-project": 78,
+    "nested-project": 79,
     "component": 112,
     "ambiguous": 0
   },
-  "projectCount": 443,
+  "projectCount": 444,
   "featuredCount": 6,
-  "exclusionCount": 229,
-  "coverageCount": 22261,
-  "scannedDirectoryCount": 22057,
-  "prunedDirectoryCount": 204,
+  "exclusionCount": 233,
+  "coverageCount": 22865,
+  "scannedDirectoryCount": 22657,
+  "prunedDirectoryCount": 208,
   "errorCount": 0,
   "ambiguousCount": 0
 }

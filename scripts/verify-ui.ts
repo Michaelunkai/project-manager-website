@@ -3,11 +3,31 @@ import path from "node:path";
 
 import { chromium, devices } from "@playwright/test";
 
+async function launchVerificationBrowser() {
+  try {
+    const browser = await chromium.launch({
+      channel: "chrome",
+      headless: true,
+    });
+
+    return { browser, engine: "chrome" as const };
+  } catch (error) {
+    console.warn(
+      `[verify:ui] Chrome channel unavailable, falling back to managed Chromium: ${
+        error instanceof Error ? error.message : String(error)
+      }`,
+    );
+
+    const browser = await chromium.launch({
+      headless: true,
+    });
+
+    return { browser, engine: "chromium" as const };
+  }
+}
+
 async function verifyViewport(baseUrl: string, mode: "desktop" | "mobile") {
-  const browser = await chromium.launch({
-    channel: "chrome",
-    headless: true,
-  });
+  const { browser, engine } = await launchVerificationBrowser();
 
   const context =
     mode === "mobile"
@@ -44,7 +64,7 @@ async function verifyViewport(baseUrl: string, mode: "desktop" | "mobile") {
   await context.close();
   await browser.close();
 
-  return href;
+  return { href, engine };
 }
 
 async function main() {
@@ -56,8 +76,9 @@ async function main() {
     JSON.stringify(
       {
         baseUrl,
-        desktopDetail,
-        mobileDetail,
+        desktopDetail: desktopDetail.href,
+        mobileDetail: mobileDetail.href,
+        browserEngine: desktopDetail.engine,
         artifactDir: "artifacts/ui-verification",
       },
       null,

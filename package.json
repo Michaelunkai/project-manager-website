@@ -11,7 +11,8 @@
     "test": "vitest run --coverage",
     "scan": "tsx scripts/scan-study.ts",
     "rescan": "npm run scan",
-    "verify:ui": "tsx scripts/verify-ui.ts"
+    "verify:ui": "tsx scripts/verify-ui.ts",
+    "netlify:prep": "powershell -ExecutionPolicy Bypass -File scripts/prepare-netlify-runtime.ps1"
   },
   "dependencies": {
     "@libsql/client": "^0.15.15",
